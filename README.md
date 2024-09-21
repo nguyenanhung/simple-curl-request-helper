@@ -1,4 +1,9 @@
-[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/simple-curl-request-helper/v)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper) [![Total Downloads](http://poser.pugx.org/nguyenanhung/simple-curl-request-helper/downloads)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/simple-curl-request-helper/v/unstable)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper) [![License](http://poser.pugx.org/nguyenanhung/simple-curl-request-helper/license)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper) [![PHP Version Require](http://poser.pugx.org/nguyenanhung/simple-curl-request-helper/require/php)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nguyenanhung/simple-curl-request-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![Total Downloads](https://img.shields.io/packagist/dt/nguyenanhung/simple-curl-request-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![Daily Downloads](https://img.shields.io/packagist/dd/nguyenanhung/simple-curl-request-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/nguyenanhung/simple-curl-request-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![License](https://img.shields.io/packagist/l/nguyenanhung/simple-curl-request-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/nguyenanhung/simple-curl-request-helper/php)](https://packagist.org/packages/nguyenanhung/simple-curl-request-helper)
 
 # Simple cURL Request Helper
 
