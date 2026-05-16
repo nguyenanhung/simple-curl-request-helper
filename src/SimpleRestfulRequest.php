@@ -18,7 +18,7 @@ class SimpleRestfulRequest
      * @param string $url
      * @param string $type
      * @param string $data
-     * @param mixed  $header
+     * @param mixed $header
      *
      * @return array|int
      * @author   : 713uk13m <dev@nguyenanhung.com>
@@ -34,15 +34,15 @@ class SimpleRestfulRequest
         }
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL            => rtrim($url, "/"),
+            CURLOPT_URL => rtrim($url, "/"),
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING       => "",
-            CURLOPT_MAXREDIRS      => 10,
-            CURLOPT_TIMEOUT        => 30,
-            CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST  => $type,
-            CURLOPT_POSTFIELDS     => $data,
-            CURLOPT_HTTPHEADER     => $header,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => $type,
+            CURLOPT_POSTFIELDS => $data,
+            CURLOPT_HTTPHEADER => $header,
             CURLOPT_SSL_VERIFYHOST => 0,
             CURLOPT_SSL_VERIFYPEER => 0,
         ));
@@ -55,7 +55,9 @@ class SimpleRestfulRequest
         $err = curl_error($curl);
         $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-        curl_close($curl);
+        if (PHP_VERSION_ID < 80000) {
+            curl_close($curl);
+        }
 
         if ($err) {
             echo "cURL Error #:" . $err;

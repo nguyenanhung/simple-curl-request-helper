@@ -307,7 +307,9 @@ class SimpleCurl
 
     public function closeCurl()
     {
-        curl_close($this->session);
+        if (PHP_VERSION_ID < 80000) {
+            curl_close($this->session);
+        }
     }
 
     public function getHttpStatus()
