@@ -54,8 +54,9 @@ class SimpleRestfulRequest
 
         $err = curl_error($curl);
         $httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-        curl_close($curl);
+        if (PHP_VERSION_ID < 80000) {
+            curl_close($curl);
+        }
 
         if ($err) {
             echo "cURL Error #:" . $err;
